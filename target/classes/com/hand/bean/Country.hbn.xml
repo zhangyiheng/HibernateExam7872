@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hand.bean.Country" table="country">
+		<id name="country_id" column="country_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="country" column="country"></property>
+		<property name="last_update" column="last_update"></property>
+
+	</class>
+
+</hibernate-mapping>

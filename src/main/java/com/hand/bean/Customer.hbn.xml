@@ -1,0 +1,19 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.hand.bean.Customer" table="customer">
+		<id name="customer_id" column="customer_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="first_name" column="first_name"></property>
+		<property name="last_name" column="last_name"></property>
+		<property name="email" column="email"></property>
+		<property name="active" column="active"></property>
+		<property name="create_date" column="create_date"></property>
+		<property name="last_update" column="last_update"></property>
+		<many-to-one name="store" column="store_id"></many-to-one>
+		<many-to-one name="address" column="address_id"></many-to-one>
+	</class>
+
+</hibernate-mapping>
