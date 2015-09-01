@@ -4,11 +4,9 @@ import java.util.Date;
 
 public class Customer {
 	private int customer_id;
-	private int store_id;
 	private String first_name;
 	private String last_name;
 	private String email;
-	private int address_id;
 	private int active;
 	private Date create_date;
 	private Date last_update;
@@ -39,13 +37,7 @@ public class Customer {
 		this.customer_id = customer_id;
 	}
 
-	public int getStore_id() {
-		return store_id;
-	}
 
-	public void setStore_id(int store_id) {
-		this.store_id = store_id;
-	}
 
 	public String getFirst_name() {
 		return first_name;
@@ -71,13 +63,6 @@ public class Customer {
 		this.email = email;
 	}
 
-	public int getAddress_id() {
-		return address_id;
-	}
-
-	public void setAddress_id(int address_id) {
-		this.address_id = address_id;
-	}
 
 	public int getActive() {
 		return active;

@@ -12,8 +12,8 @@
 		<property name="active" column="active"></property>
 		<property name="create_date" column="create_date"></property>
 		<property name="last_update" column="last_update"></property>
-		<many-to-one name="store" column="store_id"></many-to-one>
-		<many-to-one name="address" column="address_id"></many-to-one>
+		<many-to-one name="store" class="com.hand.bean.Store" column="store_id"></many-to-one>
+		<many-to-one name="address" class="com.hand.bean.Address" column="address_id"></many-to-one>
 	</class>
 
 </hibernate-mapping>
